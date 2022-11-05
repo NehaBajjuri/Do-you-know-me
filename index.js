@@ -54,5 +54,26 @@ function game() {
 
 welcome();
 game();
+var highScore = [
+  {
+    name: "Sathvika",
+    score: 5,
+  },
 
-console.log("Yayy! You scored ", score);
+  {
+    name: "Shiva",
+    score: 4,
+  },
+]
+
+
+function scores() {
+  console.log("You scored: ", score);
+
+  console.log("Check out the high scores, if you also want to be there message me with a screenshot and I will update it");
+
+  highScore.map(score => console.log(score.name, " : ", score.score))
+}
+
+
+scores()
